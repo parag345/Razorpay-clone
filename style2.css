@@ -1,0 +1,182 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.accept-payments{
+    transform-origin: center top;
+    transform: scale(0.980004) translateZ(0px);
+}
+
+.Mk-payouts{
+    transform-origin: center top;
+    transform: scale(0.980004) translateZ(0px);
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  visibility: hidden;
+}
+
+.img-content-section{
+    position: relative;
+    background-image: url(./images/radio-sec/img-1.avif);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+}
+
+#i2{
+    position: relative;
+    background-image: url(./images/radio-sec/img-2.avif);
+    background-size: cover;
+    background-position: center;
+   z-index: 0;
+}
+
+#i3{
+    position: relative;
+    background-image: url(./images/radio-sec/img-3.avif);
+    background-size: cover;
+    background-position: center;
+   z-index: 0;
+}
+
+#i4{
+    position: relative;
+    background-image: url(./images/radio-sec/img-4.avif);
+    background-size: cover;
+    background-position: center;
+   z-index: 0;
+}
+
+#i5{
+    position: relative;
+    background-image: url(./images/radio-sec/img-5.avif);
+    background-size: cover;
+    background-position: center;
+   z-index: 0;
+}
+
+.desc-btn:checked + label,
+.desc-btn:not(:checked) + label {
+  position: relative;
+  transition: all 200ms linear;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+ font-size: 1rem;
+ font-weight: bold;
+ opacity: 0.7;
+}
+
+.desc-btn:hover + label{
+    opacity: 1;
+}
+
+.desc-btn:checked + label{
+    color: #0b72e7;
+    opacity: 1;
+}
+
+.img-content-section{
+    opacity: 0;
+    pointer-events: none;
+    position: relative;
+}
+    
+/* #r1:checked ~ .l1{
+ display: block;
+} */
+
+#r1:checked ~ .img-content-section.img-sec1{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 250ms linear;
+}
+
+#r2:checked ~ .img-content-section.img-sec2{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 250ms linear;
+}
+
+#r3:checked ~ .img-content-section.img-sec3{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 250ms linear;
+}
+
+
+#r4:checked ~ .img-content-section.img-sec4{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 250ms linear;
+}
+
+
+
+#r5:checked ~ .img-content-section.img-sec5{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 250ms linear;
+}
+
+.grad{
+  
+    transform-origin: bottom;
+}
+
+.img-curl{
+   z-index:1;
+}
+
+.img-curl::before{
+    content: "";
+    position: absolute;
+    background-image:  linear-gradient(rgba(19, 38, 68, 0), rgb(19, 38, 68) 80%);
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin:bottom;
+    transition: all 0.8s;
+}
+
+.img-curl:hover::before {
+    transform: scaleY(1);
+    
+}
+
+.movediv{
+    animation-name: mv;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mv {
+    0%{
+        left:0;
+    }
+    100%{
+        left: -30%;
+    }
+}
+
+.movediv1{
+    animation-name: mv1;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mv1 {
+    0%{
+        left:0;
+    }
+    100%{
+        left: -10%;
+    }
+}
